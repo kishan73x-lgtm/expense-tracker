@@ -1,0 +1,156 @@
+
+:root{
+     --bg-color : #f4f4f4;
+     --card-color : #ffffff;
+     --text-color : #444242;
+     --button-bg : #4f46e5;
+}
+
+*{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     font-family:Tahoma,sans-serif;
+     text-transform: capitalize;
+}
+
+body{
+     background: var(--bg-color);
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     padding: 20px;
+     flex-direction: column;
+     color: var(--text-color);
+     transition: background 0.8s, color 0.8s;
+}
+h3{
+     color: var(--card-color);
+}
+main{
+     width: 100%;
+     max-width: 600px;
+     background: linear-gradient(to left,rgb(250, 36, 36) ,rgb(51, 51, 217),violet);
+     padding: 20px;
+     border-radius: 8px;
+     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+     
+}
+
+header{
+     text-align: center;
+     align-items: center;
+     display: flex;
+     gap: 10px;
+     margin-bottom: 30px;
+     
+     
+}
+
+#themeToggle{
+     background-color: var(--text-color);    
+     border-radius: 50%;
+     padding: 0;
+}
+section{
+     margin-bottom: 20px;
+}
+form{
+     display: flex;
+     flex-direction: column;
+     gap: 10px;
+}
+form button{
+     border: 1.5px solid gainsboro;
+     background-color: transparent;
+     opacity: 0.8;
+     transition: 0.3s;
+     box-shadow: 0 5px 0 transparent;
+     transition: all 0.1s ease;
+}
+form button:hover{
+    
+    border-color: var(--card-color);
+    opacity: 1;
+ } 
+     
+ 
+input{
+     padding: 10px;
+     border: 1px solid #eae7e7;
+     border-radius: 4px;
+     width: 100%;
+     letter-spacing: 1px;
+}
+button{
+     padding: 8px 16px;
+     font-size: 16px;
+     border: none;
+     font-size: larger;
+     background: transparent;
+     color: var(--card-color);
+     border-radius: 4px;
+     cursor: pointer;
+     transition: 0.3s;
+}
+button:active{
+     transform: translateY(3px);
+     box-shadow: 0 2px 0 transparent;
+ }
+button:hover{
+     opacity: 2;
+}
+ul{
+     list-style: none;
+}
+li{
+     background-color:transparent;
+     padding: 4px 8px;
+     margin-bottom: 8px;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     flex-wrap: wrap;
+     border: 1px solid gainsboro;
+     border-radius: 30px;
+     
+}
+li span{
+     flex: 1;
+     word-break: break-word;
+     /* font-size: large; */
+     font-weight:300;
+     letter-spacing: 0.5px;
+     color: var(--card-color);
+     padding-left: 10px;
+}
+.actions button{
+     opacity: 0.6;
+     color: var(--card-color);
+     font-weight: 600;
+}
+.actions button:hover{
+     text-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+     opacity: 2;
+}
+
+body.dark{
+     --bg-color : #121212;
+     --card-color : #1e1e1e;
+     --text-color : #dfd8d8;
+     --button-bg : #6366f1;
+}
+
+@media(min-width : 600px){
+     form{
+          flex-direction: row;
+     }
+     input{
+          flex: 1;
+     }
+     button{
+          width: auto;
+     }
+     
+}
+
