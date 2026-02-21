@@ -26,10 +26,9 @@ expense-tracker/
 │── script.js
 │── README.md
 
-
-
 ## 🔗 Live Demo
 
+ https://kishan73x-lgtm.github.io/expense-tracker/
 
 
 ## 📌 Future Improvements
@@ -41,4 +40,4 @@ expense-tracker/
 
 ---
 
-Made with ❤️ by [Your Name]
+Made with by kishanradh pk
